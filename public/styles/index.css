@@ -1,0 +1,76 @@
+body{
+    font-family: sans-serif;
+}
+#main_container{
+    padding: 2em;
+    background: -webkit-linear-gradient(
+                #7DC4F7,
+                #3EA8F4,
+                #0D8DE7,
+                #085891
+                );
+    background: -moz-linear-gradient(
+                #7DC4F7,
+                #3EA8F4,
+                #0D8DE7,
+                #085891
+                );
+    background: -o-linear-gradient(
+                #7DC4F7,
+                #3EA8F4,
+                #0D8DE7,
+                #085891
+                );
+}
+#main_container h1, #main_container input[type=text]{
+    display: block;
+    border-radius: 0;
+    border-radius: none;
+    padding: 10px 20px;
+}
+h1{
+    font-size: 1.5em;
+    margin: 0.75em auto !important;
+    font-weight: bold;
+    text-align: center;
+}
+h4{
+    text-transform: uppercase;
+    color: #fff;
+}
+input[type=text]{
+    width: 15em;
+    margin: 0 auto !important;
+    padding: 0.5em;
+    border: 0.12em solid gray;
+    border-radius: 0.5em;
+}
+ul{
+    list-style-type: none;
+}
+#searchResults{
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+}
+.name_li{
+    font-weight: bold;
+    text-align: center;
+}
+.teaser_li{
+    padding: 10px;
+}
+ul li:nth-child(2n+1){
+    background-color: aliceblue;
+}
+#myinput {
+    text-align: center;
+}
+@keyframes nodeInserted {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+#searchResults ul > li {
+    animation: 0.5s ease forward;
+    animation-name: nodeInserted;
+}
